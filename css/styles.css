@@ -139,13 +139,27 @@ body {
 }
 .section-features .list,
 .section-job .list,
-.section-team .list{
+.section-team .list,
+.section-clients .list{
     display: flex;
 }
 .section-features .item:not(:last-child),
 .section-job .item:not(:last-child),
-.section-team .item:not(:last-child) {
+.section-team .item:not(:last-child),
+.section-clients .item:not(:last-child)  {
         margin-right: 30px;
+}
+.section-features .icon{
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    margin-right: 0;
+    margin-bottom: 30px;
+}
+.icon-img{
+    width: 70px;
+    height: 70px;
+    margin: 25px 100px 25px 100px;
 }
 .section-features .title {
     color: var(--title-text-color);
@@ -166,7 +180,8 @@ body {
     display: block;
 }
 .section-job .title,
-.section-team .title{
+.section-team .title,
+.section-clients .title{
     color: var(--title-text-color);
     font-size: 36px;
     line-height: 1.17;
@@ -196,6 +211,26 @@ body {
     margin-top: 0px;
     margin-bottom: 0px;
     text-align: center;
+}
+.section-clients .item{
+    width: 170px;
+    height: 92px;
+
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.section-clients .link:focus,
+.section-clients .link:hover {
+   color: #2196F3;
+}
+.section-clients .icon-logo{
+    width: 106px;
+    height: 60px;
+    margin: 16px 32px 16px 32px;
+}
+.logo4{
+    color: #AFB1B8;
 }
 /* Секции страницы Порфолио */
 .list-buttons {
