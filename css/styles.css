@@ -64,7 +64,8 @@ body {
     letter-spacing: 0.02em;
 }
 .contacs-nav .link {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -74,6 +75,17 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
+.envelope{
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+}
+.smartphone{
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+}
+
 .site-nav .link:hover,
 .site-nav .link:focus,
 .contacs-nav .link:hover,
