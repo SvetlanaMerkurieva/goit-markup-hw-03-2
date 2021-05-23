@@ -79,13 +79,20 @@ body {
     width: 16px;
     height: 12px;
     margin-right: 10px;
+    fill: #757575;
 }
 .smartphone{
     width: 10px;
     height: 16px;
     margin-right: 10px;
+    fill: #757575;
 }
-
+.contacs-nav .link:hover .envelope,
+.contacs-nav .link:focus .envelope,
+.contacs-nav .link:hover .smartphone,
+.contacs-nav .link:focus .smartphone {
+    fill: #2196F3;
+}
 .site-nav .link:hover,
 .site-nav .link:focus,
 .contacs-nav .link:hover,
@@ -145,7 +152,7 @@ body {
 }
 .section-features .item:not(:last-child),
 .section-job .item:not(:last-child),
-.section-team .item:not(:last-child),
+.section-team .card-team:not(:last-child),
 .section-clients .item:not(:last-child)  {
         margin-right: 30px;
 }
@@ -192,6 +199,11 @@ body {
 .section-team { 
     background-color: #F5F4FA;
 }
+.section-team .card-team {
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
 .description-foto{
     padding-top: 30px;
     padding-bottom: 30px;
@@ -209,8 +221,22 @@ body {
     font-size: 16px;
     line-height: 1.19;
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 16px;
     text-align: center;
+}
+.social{
+    display: inline-flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: blue;
+}
+.social-icon {
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
 }
 .section-clients .item{
     width: 170px;
@@ -220,17 +246,20 @@ body {
     box-sizing: border-box;
     border-radius: 4px;
 }
-.section-clients .link:focus,
-.section-clients .link:hover {
-   color: #2196F3;
-}
 .section-clients .icon-logo{
     width: 106px;
     height: 60px;
     margin: 16px 32px 16px 32px;
+    fill: #AFB1B8;
 }
-.logo4{
-    color: #AFB1B8;
+.section-clients .item:hover,
+.section-clients .item:focus {
+    border: 1px solid #2196F3;
+    fill: #2196F3;
+}
+.section-clients .link:hover .icon-logo,
+.section-clients .link:focus .icon-logo {
+    fill: #2196F3;
 }
 /* Секции страницы Порфолио */
 .list-buttons {
