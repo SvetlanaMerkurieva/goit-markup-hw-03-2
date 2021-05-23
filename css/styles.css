@@ -224,19 +224,33 @@ body {
     margin-bottom: 16px;
     text-align: center;
 }
+.card-team .list {
+    display: flex;
+    justify-content: center;
+}
 .social{
     display: inline-flex;
+    justify-content: center;
+    align-items: center;
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: blue;
 }
 .social-icon {
-    justify-content: center;
-    align-items: center;
     width: 20px;
     height: 20px;
     fill: #AFB1B8;
+}
+.item-social:not(:last-child) {
+    margin-right: 10px;
+}
+.social:hover,
+.social:focus{
+    background-color: #2196F3;
+}
+.social:hover .social-icon,
+.social:focus .social-icon {
+    fill: #FFFFFF;
 }
 .section-clients .item{
     width: 170px;
@@ -245,11 +259,21 @@ body {
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
     border-radius: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-clients .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
 }
 .section-clients .icon-logo{
     width: 106px;
     height: 60px;
-    margin: 16px 32px 16px 32px;
     fill: #AFB1B8;
 }
 .section-clients .item:hover,
@@ -311,6 +335,7 @@ body {
     line-height: 1.87;
     letter-spacing: 0.06em;
     border: 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     padding: 10px 32px;
     min-width: 200px;
@@ -377,3 +402,47 @@ body {
 .address .link:focus { 
     color: #2196F3;
 }
+.site-footer .container{
+    display: flex;
+    align-items: flex-start;
+}
+.logo-address{
+    margin-right: 70px;
+}
+.social-footer .text {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+.social-footer .list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-footer-social:not(:last-child) {
+    margin-right: 10px;
+}
+.footer-social{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+}
+.footer-social-icon {
+    width: 20px;
+    height: 20px;
+    fill: #FFFFFF;
+}
+.footer-social:hover,
+.footer-social:focus{
+    background-color: #2196F3;
+}
+
+        
