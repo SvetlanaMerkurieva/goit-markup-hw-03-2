@@ -163,10 +163,14 @@ body {
     margin-right: 0;
     margin-bottom: 30px;
 }
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .icon-img{
     width: 70px;
     height: 70px;
-    margin: 25px 100px 25px 100px;
 }
 .section-features .title {
     color: var(--title-text-color);
@@ -224,7 +228,7 @@ body {
     margin-bottom: 16px;
     text-align: center;
 }
-.card-team .list {
+.description-foto .list {
     display: flex;
     justify-content: center;
 }
